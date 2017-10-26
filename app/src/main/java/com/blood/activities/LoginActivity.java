@@ -79,12 +79,12 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onCancel() {
-                Toast.makeText(LoginActivity.this,"cancel",Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this,"Canceled By User",Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onError(FacebookException exception) {
-                Toast.makeText(LoginActivity.this, "error to Login Facebook", Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, "Error Loging into Facebook", Toast.LENGTH_LONG).show();
             }
 
 
@@ -103,6 +103,9 @@ public class LoginActivity extends AppCompatActivity {
             editor.putString(PublicValues.DATE_OF_BIRTH, jsonObject.getString("birthday")).commit();
             editor.putString(PublicValues.GENDER, jsonObject.getString("gender")).commit();
             editor.apply();
+
+            Intent intent= new Intent(LoginActivity.this,NewUserRegister.class);
+            startActivity(intent);
 
         } catch (JSONException e) {
             e.printStackTrace();

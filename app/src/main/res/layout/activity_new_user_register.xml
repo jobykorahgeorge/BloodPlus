@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
+            <com.facebook.login.widget.ProfilePictureView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="16dp"
@@ -35,7 +35,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:id="@+id/profile_dp"
-                app:layout_constraintDimensionRatio="H,3:2"/>
+                app:layout_constraintDimensionRatio="H,4:2"/>
 
         </android.support.constraint.ConstraintLayout>
 
@@ -44,6 +44,7 @@
           android:layout_height="wrap_content"
           android:hint="Name"
           android:id="@+id/name"
+          android:focusable="false"
           android:textAlignment="center"
           android:layout_marginTop="10dp"
           android:layout_marginRight="16dp"
@@ -54,6 +55,7 @@
             android:layout_height="wrap_content"
             android:hint="Email"
             android:id="@+id/email"
+            android:editable="false"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
             android:layout_marginRight="16dp"
@@ -64,6 +66,7 @@
             android:layout_height="wrap_content"
             android:hint="Date Of Birth"
             android:id="@+id/dob"
+            android:editable="false"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
             android:layout_marginRight="16dp"
@@ -75,6 +78,7 @@
             android:layout_height="wrap_content"
             android:hint="Gender"
             android:id="@+id/gender"
+            android:editable="false"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
             android:layout_marginRight="16dp"
@@ -90,16 +94,16 @@
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
             />
+
         <EditText
+            android:id="@+id/weight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Weight"
-            android:id="@+id/weight"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
-            />
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:hint="Weight"
+            android:textAlignment="center" />
 
 
         <Spinner

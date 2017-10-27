@@ -74,16 +74,17 @@
             />
 
         <EditText
+            android:id="@+id/gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gender"
-            android:id="@+id/gender"
-            android:editable="false"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"
-            />
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:editable="false"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="Gender"
+            android:singleLine="false"
+            android:textAlignment="center" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

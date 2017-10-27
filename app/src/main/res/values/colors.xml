@@ -8,7 +8,7 @@
     <color name="darkred">#e4f71616</color>
     <color name="strok">#fbc7c7c7</color>
     <color name="black">#fb000000</color>
-    <color name="background_material_dark_spinner">#fb000000</color>
+    <color name="background_material_dark_spinner">#e1edcaca</color>
 
 
 </resources>

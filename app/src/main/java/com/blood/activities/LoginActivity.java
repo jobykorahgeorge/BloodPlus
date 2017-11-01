@@ -41,7 +41,6 @@ public class LoginActivity extends AppCompatActivity {
 
 
     private EditText username;
-    @BindView(R.id.password)
     private EditText password;
     private CallbackManager callbackManager;
     private LoginButton loginbutton;

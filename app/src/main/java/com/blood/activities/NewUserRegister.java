@@ -17,20 +17,14 @@ import butterknife.ButterKnife;
 
 public class NewUserRegister extends AppCompatActivity {
 
-    @BindView(R.id.profile_dp)
-    ImageView profile_dp;
-    @BindView(R.id.name)
     EditText name;
-    @BindView(R.id.email)
     EditText email;
-    @BindView(R.id.mobile)
     EditText mobile;
-    @BindView(R.id.dob)
     EditText dob;
-    @BindView(R.id.gender)
     EditText gender;
-    @BindView(R.id.weight)
     EditText weight;
+    EditText userid;
+    EditText password;
     private ProfilePictureView profilePictureView;
 
     @Override
@@ -40,21 +34,17 @@ public class NewUserRegister extends AppCompatActivity {
         ButterKnife.bind(this);
         profilePictureView = (ProfilePictureView) findViewById(R.id.profile_dp);
         gender=(EditText)findViewById(R.id.gender);
-
         dob=(EditText)findViewById(R.id.dob);
         name=(EditText)findViewById(R.id.name);
         name.setSelected(false);
         email=(EditText)findViewById(R.id.email);
         SharedPreferences sharedPref = getSharedPreferences("UserDetails", Context.MODE_PRIVATE);
         String id=sharedPref.getString(PublicValues.FACEBOOK_USER_ID,"");
-        profilePictureView.setPresetSize(ProfilePictureView.LARGE);
+        profilePictureView.setPresetSize(ProfilePictureView.CUSTOM);
         profilePictureView.setProfileId(id);
         name.setText(sharedPref.getString(PublicValues.USER_NAME,""));
         dob.setText(sharedPref.getString(PublicValues.DATE_OF_BIRTH,""));
         gender.setText(sharedPref.getString(PublicValues.GENDER,""));
         email.setText(sharedPref.getString(PublicValues.EMAIL_ID,""));
-
-
-
     }
 }

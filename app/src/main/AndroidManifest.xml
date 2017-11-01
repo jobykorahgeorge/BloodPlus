@@ -15,7 +15,10 @@
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".activities.LoginActivity">
+        <activity android:name=".activities.OTPActivity">
+
+        </activity>
+        <activity android:name=".activities.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +26,9 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
 
             </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity">
+
         </activity>
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"

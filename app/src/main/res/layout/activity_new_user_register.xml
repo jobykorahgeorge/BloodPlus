@@ -85,6 +85,17 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:id="@+id/repassword"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="Date Of Birth"
             android:id="@+id/dob"
             android:editable="false"
@@ -119,7 +130,7 @@
 
 
         <Spinner
-            android:id="@+id/district"
+            android:id="@+id/bloodgroup"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginTop="2dp"

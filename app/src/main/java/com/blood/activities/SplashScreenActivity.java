@@ -29,16 +29,16 @@ public class SplashScreenActivity extends AppCompatActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    SharedPreferences sharedPref = getSharedPreferences("UserDetails", Context.MODE_PRIVATE);
-                    if(sharedPref.getString(PublicValues.FACEBOOK_USER_ID," ").isEmpty()){
+//                    SharedPreferences sharedPref = getSharedPreferences("UserDetails", Context.MODE_PRIVATE);
+//                    if(sharedPref.getString(PublicValues.FACEBOOK_USER_ID," ").isEmpty()){
                     Intent intent = new Intent(SplashScreenActivity.this,LoginActivity.class);
                     startActivity(intent);
                     finish();
-                    }
-                    else {
-                        Intent intent=new Intent(SplashScreenActivity.this,OTPActivity.class);
-                        startActivity(intent);
-                    }
+//                    }
+//                    else {
+//                        Intent intent=new Intent(SplashScreenActivity.this,OTPActivity.class);
+//                        startActivity(intent);
+//                    }
                 }
             }
         };

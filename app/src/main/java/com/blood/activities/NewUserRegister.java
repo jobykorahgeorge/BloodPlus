@@ -68,7 +68,16 @@ public class NewUserRegister extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(name.getText().toString().length()==0){
+                    AlertDialog alertDialog=new AlertDialog.Builder(NewUserRegister.this).create();
+                    alertDialog.setTitle("oops!");
+                    alertDialog.setMessage("Name : must be given");
+                    alertDialog.setButton("ok",
+                            new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
 
+                        }
+                    });
                 }
                 if(gender.getText().toString().length()==0){
 
